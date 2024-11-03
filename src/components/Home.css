@@ -1,0 +1,190 @@
+/* src/components/Home.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: calc(100vh - 80px); Adjust height considering navbar height */
+  text-align: center;
+  /* background-color: #f9f9f9; */
+}
+
+#home-login-btn {
+  transition: background-color 0.3s ease; /* Smooth transition for the background color */
+  border-radius: 100px;
+  width: 90px;
+  font-size: 15px;
+}
+
+#home-login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Change the background color on hover */
+}
+
+#home-signup-btn {
+  transition: background-color 0.3s ease; /* Smooth transition for the background color */
+  border-radius: 100px;
+  border: transparent;
+  width: 90px;
+  font-size: 15px;
+}
+
+#home-signup-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Change the background color on hover */
+  color: black;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.carousel {
+  padding-bottom: 30vh;
+}
+
+.carousel-item-header {
+  font-size: 70px;
+  font-weight: 500;
+  color: red; /* Set text color to white for better contrast */
+  text-align: center; /* Center-align text horizontally */
+}
+
+.carousel-item {
+  top: 10px; /* Adjust the top position */
+}
+
+.carousel-item-content {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(62, 61, 61);
+}
+
+.how-it-works {
+  padding-bottom: 30vh;
+}
+
+#how-it-works-header {
+  font-size: 80px;
+  font-weight: 500;
+  color: black; /* Set text color to white for better contrast */
+  text-align: center; /* Center-align text horizontally */
+  margin-bottom: 2vh;
+}
+
+#how-it-works-content {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(62, 61, 61);
+  margin-bottom: 5vh;
+}
+
+ol {
+  list-style-position: inside; /* Ensure the list numbers are inside the list item */
+  padding-left: 0; /* Remove default padding */
+  text-align: center; /* Center-align the text */
+}
+
+.testimonials {
+  padding-bottom: 10vh;
+}
+
+.testimonial-header {
+  font-size: 80px;
+  font-weight: 500;
+  color: black; /* Set text color to white for better contrast */
+  text-align: center; /* Center-align text horizontally */
+  margin-bottom: 2vh;
+}
+
+.testimonial-content {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(62, 61, 61);
+  padding-bottom: 10vh;
+}
+
+.carousel,
+.how-it-works,
+.testimonials {
+  opacity: 0;
+  transform: translateY(20px); /* Starts slightly below */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* When visible, the elements will fade in and move into position */
+.carousel.visible,
+.how-it-works.visible,
+.testimonials.visible {
+  opacity: 1;
+  transform: translateY(0); /* Moves to its normal position */
+}
+
+.collapse {
+  margin: auto;
+  z-index: 0;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  box-shadow: 0 2px 16px hsla(230, 75%, 32%, 0.15);
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel-item-header {
+    font-size: 50px;
+  }
+
+  .carousel-item-content {
+    font-size: 30px;
+  }
+
+  #how-it-works-header {
+    font-size: 60px;
+  }
+
+  #how-it-works-content {
+    font-size: 30px;
+  }
+
+  .testimonial-header {
+    font-size: 60px;
+  }
+
+  .testimonial-content {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item-header {
+    font-size: 40px;
+  }
+
+  .carousel-item-content {
+    font-size: 20px;
+  }
+
+  #how-it-works-header {
+    font-size: 50px;
+  }
+
+  #how-it-works-content {
+    font-size: 20px;
+  }
+
+  .testimonial-header {
+    font-size: 50px;
+  }
+
+  .testimonial-content {
+    font-size: 20px;
+  }
+}

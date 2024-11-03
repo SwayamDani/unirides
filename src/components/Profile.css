@@ -1,0 +1,68 @@
+.profile-details-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+#logout-btn {
+  background-color: rgb(170, 18, 18);
+}
+
+.profile-picture {
+  border-radius: 50%;
+  display: block; /* Ensures the element is treated as a block-level element */
+  margin-inline: auto; /* Center the icon horizontally */
+  object-fit: cover; /* Ensures the image covers the area without stretching. */
+  width: 200px; /* Adjust based on the new font size */
+  height: 200px; /* Adjust based on the new font size */
+  font-size: 200px; /* Updated icon size */
+  margin-bottom: 20px; /* Keeps space between the icon and the following content */
+}
+
+/* .profile-info {
+  text-align: center;
+} */
+
+.profile-header {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.profile {
+  padding-top: 200px !important; /* Add padding to the top to prevent content from being hidden */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+  }
+
+  .profile-details-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+  }
+
+  .profile-details-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

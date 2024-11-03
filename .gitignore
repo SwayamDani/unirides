@@ -1,4 +1,4 @@
-Remove-Item -Recurse -Force .git/refs/original/# Node modules
+# Node modules
 node_modules/
 
 # Build output
@@ -17,3 +17,4 @@ jspm_packages/
 
 # Cache directories
 .cache/
+.vercel

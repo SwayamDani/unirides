@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { StandaloneSearchBox } from '@react-google-maps/api';
 
 const CustomStandaloneSearchBox = ({ onPlacesChanged, placeholder, className }) => {
   const searchBoxRef = useRef(null);

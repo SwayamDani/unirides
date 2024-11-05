@@ -161,7 +161,7 @@ const CreateGroup = ({ setPopupMessage }) => {
 
           <div>
             <p className="create_group__signup">
-              Want to join a Group? <a id="join-link" href="#" onClick={() => navigate('/join-group')}>Join</a>
+              Want to join a Group? <a id="join-link" onClick={() => navigate('/join-group')}>Join</a>
             </p>
 
             <button type="submit" className="create_group__button">Create</button>

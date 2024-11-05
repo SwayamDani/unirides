@@ -36,7 +36,7 @@ const App = () => {
       <Navbar />
       <div className="main-content">
         <Routes>
-          <Route path="/unirides" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/unirides/profile" element={<Profile />} />
           <Route path="/unirides/cards" element={<Cards />} />
           <Route path="/unirides/join-group" element={<Cards />} /> {/* "Join a Group" shows Cards */}
